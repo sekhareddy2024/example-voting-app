@@ -1,0 +1,25 @@
+azureuser@azurecicd:~$ az login
+To sign in, use a web browser to open the page https://microsoft.com/devicelogin                                                                   and enter the code APBCSAUVZ to authenticate.
+[
+  {
+    "cloudName": "AzureCloud",
+    "id": "2a70861d-8923-45a2-b1c5-f0dabd83d3e3",
+    "isDefault": true,
+    "name": "Free Trial",
+    "state": "Enabled",
+    "tenantId": "96e463d0-8f4b-47fe-910d-2f2ba2ab08a7",
+    "user": {
+      "name": "sekhareddyk5@gmail.com",
+      "type": "user"
+    }
+  }
+]
+azureuser@azurecicd:~$ az aks get-credentials --name azurecicd --overwrite-existing azurecicd --resource-group azureagent
+az: error: unrecognized arguments: azurecicd
+usage: az [-h] [--verbose] [--debug] [--output {json,jsonc,table,tsv,yaml,none}] [--query JMESPATH] {aks} ...
+azureuser@azurecicd:~$ az aks get-credentials --name azurecicd --overwrite-existing azurecicd --resource-group azurecicd
+az: error: unrecognized arguments: azurecicd
+usage: az [-h] [--verbose] [--debug] [--output {json,jsonc,table,tsv,yaml,none}] [--query JMESPATH] {aks} ...
+azureuser@azurecicd:~$ az aks get-credentials --name azurecicd --overwrite-existing  --resource-group azurecicd
+Merged "azurecicd" as current context in /home/azureuser/.kube/config
+azureuser@azurecicd:~$
