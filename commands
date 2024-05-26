@@ -23,3 +23,12 @@ usage: az [-h] [--verbose] [--debug] [--output {json,jsonc,table,tsv,yaml,none}]
 azureuser@azurecicd:~$ az aks get-credentials --name azurecicd --overwrite-existing  --resource-group azurecicd
 Merged "azurecicd" as current context in /home/azureuser/.kube/config
 azureuser@azurecicd:~$
+
+--------------------------
+
+
+ kubectl get svc -n argocd
+kubectl edit argocd-server -n argocd
+kubectl edit secret argocd-initial-admin-secret -n argocd
+echo VGlVLVRWbnh4Nmh1ejhPUA== | base64 --decode
+
